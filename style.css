@@ -2,14 +2,10 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #EEEEEE; 
 }
-
 .top-part{
     display: flex;
     background-color: #2D25A0;
-    height: 640px;
-  
-
-
+    height: 640px; 
 }
 .half-width{
     width: 48%;
@@ -25,8 +21,7 @@ body{
 }
 .half-width img{
     width: 90%;
-    margin-top: 30px;
-  
+    margin-top: 30px; 
     
 }
 .left-part{
@@ -63,12 +58,10 @@ body{
      grid-template-columns: repeat(3, 1fr);
      align-items:center;
      justify-content: center;
-     margin: 70px 150px;
-    
+     margin: 70px 150px;    
      padding-right:20px;
      
  }
-
  .player{
     padding: 15px;  
      width: 300px;
@@ -94,6 +87,39 @@ body{
     height: 240;
       
  }
+/*  Extra-Part Css start */
+
+.extra-part{
+    width: 80%;
+    margin: auto;     
+}
+.videos{
+    display: flex;
+ }
+.extra-part iframe{
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.contact-form{
+    margin-bottom: 50px;
+   display: flex;
+   justify-content: center; 
+}
+form{
+    display: flex;
+  flex-direction: column;
+ 
+}
+button{
+    background-color:green;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+}
+/* Extra-Part Css end */
+
+/* Footer CSS xtart */
  #footer{
     text-align: center;
     margin-left: auto;
@@ -101,16 +127,10 @@ body{
     height: 213px;
     width: 483.87103271484375px;
     background-color:#FFF; 
-
 }
 #footer img{
     height: 110px;
-    width: 483px;
-    
-}
-.social-ico{
-    
-    
+    width: 483px;    
 }
 .social-icon i{
     width: 19px;
@@ -119,16 +139,74 @@ body{
     margin: 7px;
     color: gray; 
     background-color: lightgray;
-    border-radius: 50%;
-   
-    align-items: center;
-    justify-content: center; 
-   
-  
+    border-radius: 50%;  
 }
 #footer h4{
    font-size: 24;
    color:#000000;
-   ;
+   }
+
+/*    Responsive CSS start */
+
+   @media only screen and (max-width: 360px) {
+    .top-part{
+        display: flex;
+        flex-direction: column;
+        background-color: #2D25A0;
+        height: 750px;}
+    .left-part {
+        justify-content: center;
+        text-align: left;           
+        padding: 50px;      
+
+        }
+           
+    .left-part h1{        
+            font-size: 27px;
+            }
+             
+    .right-part a{
+        margin-right: 40px;  }  
+
+    .half-width{       
+        width: 100%;
+   }
+
+    .half-width img{
+        width: 95%;
+        }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 5px; 
+        width: 100%;          
+           
+            
+        }
+        
+.videos{
+    display: flex;
+    flex-direction: column;
+ }
+ .extra-part iframe{
+     width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
 }
+#footer{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;    
+    width: 360px;  
+} 
+    #footer img{
+        width: 70%;       
+    }
+    #footer h4{
+        font-size: 20px;}       
+             
+
+   }
+   /*    Responsive CSS end */
 
